@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="img/logo carro.png" />
+    <title>Venda de Carros Esportivos</title>
+  </head>
+  <body>
+    <header>
+      <h1>Sport Cars - Carros Esportivos de Luxo</h1>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#cars">Carros</a></li>
+          <li><a href="#merchan">Promoções</a></li>
+          <li><a href="#contato">Contato</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="home">
+      <h1>Bem-vindo à nossa loja de Carros Esportivos!</h1>
+      <p>
+        Encontre o carro dos seus sonhos e viva a experiência de dirigir uma
+        máquina de luxo.
+      </p>
+      <img
+        src="img/carro principal.jpg"
+        alt="Carro Esportivo"
+        class="home-image"
+      />
+    </section>
+
+    <section id="cars">
+      <h2>Carros Esportivos em Venda</h2>
+      <div class="car-cards">
+        <div class="card">
+          <img src="img/ferrari f8.jpg" alt="Ferrari F8" />
+          <h3>Ferrari F8</h3>
+          <p>Preço: R$ 1.200.000</p>
+          <button
+            class="btn-buy"
+            onclick="comprarCarro('Ferrari F8', 'R$ 1.200.000')"
+          >
+            Comprar
+          </button>
+        </div>
+
+        <div class="card">
+          <img src="img/lambo huracan.jpeg" alt="Lamborghini Huracán" />
+          <h3>Lamborghini Huracán</h3>
+          <p>Preço: R$ 1.500.000</p>
+          <button
+            class="btn-buy"
+            onclick="comprarCarro('Lamborghini Huracán', 'R$ 1.500.000')"
+          >
+            Comprar
+          </button>
+        </div>
+
+        <div class="card">
+          <img src="img/porsche 991.jpg" alt="Porsche 911" />
+          <h3>Porsche 911</h3>
+          <p>Preço: R$ 950.000</p>
+          <button
+            class="btn-buy"
+            onclick="comprarCarro('Porsche 911', 'R$ 950.000')"
+          >
+            Comprar
+          </button>
+        </div>
+
+        <div class="card">
+          <img src="img/mclaren 720s.jpg" alt="McLaren 720S" />
+          <h3>McLaren 720S</h3>
+          <p>Preço: R$ 1.800.000</p>
+          <button
+            class="btn-buy"
+            onclick="comprarCarro('McLaren 720S', 'R$ 1.800.000')"
+          >
+            Comprar
+          </button>
+        </div>
+
+        <div class="card">
+          <img src="img/audi r8.jpg" alt="Audi R8" />
+          <h3>Audi R8</h3>
+          <p>Preço: R$ 1.000.000</p>
+          <button
+            class="btn-buy"
+            onclick="comprarCarro('Audi R8', 'R$ 1.000.000')"
+          >
+            Comprar
+          </button>
+        </div>
+
+        <div class="card">
+          <img src="img/bmw i8.jpg" alt="BMW i8" />
+          <h3>BMW i8</h3>
+          <p>Preço: R$ 850.000</p>
+          <button
+            class="btn-buy"
+            onclick="comprarCarro('BMW i8', 'R$ 850.000')"
+          >
+            Comprar
+          </button>
+        </div>
+
+        <div class="card">
+          <img src="img/chevrolet corvette.jpg" alt="Chevrolet Corvette" />
+          <h3>Chevrolet Corvette</h3>
+          <p>Preço: R$ 700.000</p>
+          <button
+            class="btn-buy"
+            onclick="comprarCarro('Chevrolet Corvette', 'R$ 700.000')"
+          >
+            Comprar
+          </button>
+        </div>
+
+        <div class="card">
+          <img src="img/jaguar f type.jpg" alt="Jaguar F-Type" />
+          <h3>Jaguar F-Type</h3>
+          <p>Preço: R$ 1.100.000</p>
+          <button
+            class="btn-buy"
+            onclick="comprarCarro('Jaguar F-Type', 'R$ 1.100.000')"
+          >
+            Comprar
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="merchan">
+      <h2>Ofertas Especiais!</h2>
+      <p>
+        Confira nossas promoções e garanta o carro dos seus sonhos com preços
+        especiais!
+      </p>
+      <img
+        src="img/carro promoção.jpg"
+        alt="Promoção Especial"
+        class="merchan-image"
+      />
+    </section>
+
+    <!-- Formulário de Contato -->
+    <section id="contato">
+      <h2>Entre em Contato</h2>
+      <form id="formContato">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" placeholder="Digite seu nome" required />
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          placeholder="Digite seu e-mail"
+          required
+        />
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+
+    <section id="sobre">
+      <h2>Sobre Nós</h2>
+      <p>
+        Somos uma loja especializada em carros esportivos de luxo. Trabalhamos
+        com as melhores marcas do mercado e garantimos um atendimento
+        personalizado.
+      </p>
+      <img src="img/carro sobre.webp" alt="Sobre Nós" class="sobre-image" />
+    </section>
+
+    <footer>
+      <p>&copy; 2024 Sport Cars - Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
